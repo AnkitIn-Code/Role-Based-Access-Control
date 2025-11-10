@@ -1,0 +1,43 @@
+.admin-container { min-height: 100vh; background: transparent; }
+.admin-content { max-width: 1080px; margin: 0 auto; padding: 2rem 2.5rem; }
+
+.admin-card { background: var(--surface); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-m); transition: box-shadow .25s ease, transform .25s ease; }
+.admin-card:hover { box-shadow: var(--shadow-l); transform: translateY(-2px); }
+.admin-card h2 { color: var(--text); margin-bottom: 1rem; font-weight: 600; }
+.admin-card > p { color: var(--text-muted); margin-bottom: 2rem; line-height: 1.6; }
+
+.admin-info { margin-bottom: 2rem; }
+.admin-info h3 { color: var(--text); margin-bottom: 1rem; font-weight: 600; }
+.admin-info ul { list-style: none; padding: 0; }
+.admin-info li { padding: 0.5rem 0; color: var(--text-muted); font-size: 1.05rem; }
+
+.registered-users, .editor-requests { margin-bottom: 2.25rem; }
+.user-lists { display: flex; gap: 2rem; flex-wrap: wrap; }
+.user-lists ul { list-style: none; padding: 0; margin-top: 0.5rem; }
+.user-lists strong { display: block; margin-bottom: 0.25rem; color: var(--text); }
+
+.editor-requests ul { list-style: none; padding: 0; }
+.editor-requests li { background: #fff; padding: 0.75rem 1rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-s); }
+.editor-requests li button:first-of-type { background: var(--success); color: #fff; border-color: transparent; }
+.editor-requests li button:first-of-type:hover { background: var(--success-600); }
+.editor-requests li button + button { background: var(--danger); color: #fff; border-color: transparent; }
+.editor-requests li button + button:hover { background: var(--danger-600); }
+
+.role-comparison { margin-bottom: 2rem; }
+.role-comparison h3 { color: var(--text); margin-bottom: 0.75rem; font-weight: 600; }
+.role-comparison table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.role-comparison th, .role-comparison td { padding: 0.85rem 1rem; text-align: left; border: 1px solid var(--border); }
+.role-comparison th { background: var(--primary); color: #fff; font-weight: 600; }
+.role-comparison tr:nth-child(even) { background: #fafafa; }
+.role-comparison tr:hover { background: #f5f7ff; }
+.role-comparison td { text-align: center; font-size: 1.05rem; }
+
+.back-link { display: inline-block; margin-top: 2rem; padding: 0.75rem 1.5rem; background: var(--primary); color: #fff; text-decoration: none; border-radius: var(--radius-sm); transition: background 0.2s, box-shadow 0.2s, transform 0.2s; box-shadow: var(--shadow-s); }
+.back-link:hover { background: var(--primary-600); box-shadow: var(--shadow-m); transform: translateY(-1px); }
+
+@media (max-width: 768px) {
+  .admin-content { padding: 1.25rem 1.25rem; }
+  .user-lists { flex-direction: column; gap: 1.25rem; }
+  .role-comparison th, .role-comparison td { padding: 0.6rem; }
+  .role-comparison table { font-size: 0.85rem; }
+}
