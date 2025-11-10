@@ -1,6 +1,7 @@
 # Fine-Grained Role-Based Access Control (RBAC) MERN Stack Application
 
 A complete MERN stack application demonstrating fine-grained Role-Based Access Control (RBAC) with three roles: **Admin**, **Editor**, and **Viewer**.
+Link to the deployed project https://frontend-vercel-8kov.vercel.app/
 
 ## Features
 
